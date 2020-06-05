@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation using regexp</title>
+    <style>
+        #input-form{
+            background-color: aqua;
+            width: 450px;
+            margin: 0px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #username,#password,#submit{
+            display: block;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            box-shadow: 0px 0px 6px 2px black;
+            box-sizing: border-box;
+        }
+        
+        #username,#password{
+            width: 100%;
+        }
+        #submit{
+            background-color: transparent;
+            font-size: larger;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #username_error{
+            display: none;
+            color: red;
+        }
+        #password_error{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="input-form" action="">
+        <input type="text" name="username" placeholder="username" id="username">
+        <p id="username_error"> enter valid username</p>
+        <input type="password" name="password" placeholder="password" id="password">
+        <p id="password_error"> enter valid password</p>
+        <input type="submit" value="submit" id="submit">
+    <script src="./JS FILES/form validation using regexp.js"></script>
+</body>
+</html>

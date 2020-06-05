@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update and delet html elements</title>
+    <script src="https://kit.fontawesome.com/a1f83595a9.js" crossorigin="anonymous"></script>
+    <style>
+        #input_div{
+            text-align: center;
+        }
+        #input_field{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            box-shadow: 2px 2px 4px black;
+            font-size: 18px;
+        }
+        #button_div{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn_clk{
+            background-color: white;
+            color: tomato;
+            text-transform: capitalize;
+            padding: 10px;
+            margin-left: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            box-shadow: -2px -2px 4px black;
+            outline: none;
+        }
+        #listing{
+           padding: 20px;
+
+        }
+        #listing>li{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            list-style-type: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px black;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        #listing>li>button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        #listing>li>button:hover{
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div id="input_div">
+            <input type="text" name="text" id="input_field" placeholder="Enter to-do list" >
+        </div>
+        <div id="button_div" >
+            <input type="button" name="button" id="add" class="btn_clk" value="add list item" >
+            <input type="button" name="button" id="update" class="btn_clk" value="update first item" >
+            <input type="button" name="button" id="delet" class="btn_clk" value="delet first item" >
+        </div>
+        <div id="list_div" >
+            <ul id="listing" >
+            </ul>
+
+
+        </div>
+    </section>
+   
+    <script src="./JAVASCRIPT FILES/update and delet html elements.js"></script>
+</body>
+</html>

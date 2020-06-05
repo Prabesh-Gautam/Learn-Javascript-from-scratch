@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and environment </title>
+</head>
+<body>
+    <script>
+        // global variable works in global environment and local variable works in local environment.
+        var num1=50; // num1 global variable: it can be accessed anywhere
+        var num2 = 10;  // here num2 is the global variable{ same variable name but different scope.}
+       
+        function add(num2){
+            // here total and num2 is a local variable it can only be accessed inside the function
+            var total = num2 + num1;
+            console.log(total);
+        }
+        console.log(num2); //it accesses the global variable , it cannot access the local variable num2.
+        add(50);
+        console.log(total);
+        
+
+    </script>
+</body>
+</html>

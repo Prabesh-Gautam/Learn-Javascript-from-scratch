@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explicit type coercion</title>
+</head>
+<body>
+    <script>
+        var num1= 50 ;
+
+        // to string
+        console.log(typeof(String(num1)));
+        console.log(typeof(String(true)))
+        console.log(typeof(String(undefined)))
+        console.log(typeof(String(null)))
+
+        //to number
+        console.log(typeof(Number("50")));
+        console.log(typeof(Number(true)))
+        console.log(typeof(Number(undefined)))
+        console.log(typeof(Number(null)))
+        
+        // to boolen
+        console.log(Boolean(num1),typeof(Boolean(num1)));
+        console.log(Boolean("apple"),typeof(Boolean("apple")));
+        console.log(Boolean(""),typeof(Boolean(true)))
+        console.log(Boolean(undefined),typeof(Boolean(undefined)))
+        console.log(Boolean(null),typeof(Boolean(null)))
+
+    </script>
+</body>
+</html>

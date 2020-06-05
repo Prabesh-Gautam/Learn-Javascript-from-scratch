@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>built in function part 2</title>
+</head>
+<body>
+    <script>
+        var exmapleStr= "javascript tutorial"
+        var exmapleStr2 = "SECOND EXAMPLE";
+
+        // toUpperCase() to convert the string to the uppercase..
+        console.log(exmapleStr.toUpperCase());
+
+        // toLowerCase() to convert the string to the lowercase.
+        console.log(exmapleStr2.toLowerCase());
+
+        // concat() to combine two strings together
+        var first="My name is";
+        var second="Prabesh Gautam."
+        console.log(first.concat(" ",second));
+        
+        // another way of combining the strings is using '+' operator.
+        console.log(first +" "+ second );
+
+
+        // trim() it removes extra spaces.
+        var extraSpace = "     Prabesh     ";
+        console.log(extraSpace.trim());
+
+        var extraSpace2 = "    I am Prabesh    ";
+        console.log(extraSpace2.trim());
+
+        // charAt() this takes the position as an argument and returns the character at that position.
+        var test=" I am from Ilam."
+        console.log(test.charAt(6))
+        console.log(test.charAt(9))
+
+
+        // split() it splits the string on the basis of the argument passed through.
+        var test1=" I studied in asian college of higher studies"
+        console.log(test1.split(' '))
+
+        var test3=" mango, banana, apple, grapes"
+        console.log(test3.split(','))
+
+        var test4 ="this is awesom"
+        console.log(test4.split())
+
+    </script>
+</body>
+</html>

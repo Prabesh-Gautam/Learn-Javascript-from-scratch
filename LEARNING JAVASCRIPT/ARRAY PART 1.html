@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array part 1</title>
+</head>
+<body>
+    <script>
+        var listOfFriends = ['Sweta','Prabesh','Anish','Bhawana'];
+        console.log(listOfFriends);
+        console.log(typeof(listOfFriends));
+        console.log(listOfFriends[0])
+        console.log(listOfFriends[1])
+
+
+        // update a value in array
+        listOfFriends[0]="sweta";
+        console.log(listOfFriends)
+
+        // // add more items
+        // listOfFriends[listOfFriends.length] = 'pawan'
+        // console.log(listOfFriends)
+
+        // INBUILT function in JS PUSH: it adds items in the end of the list
+        listOfFriends.push('pawan');  
+        console.log(listOfFriends)
+
+        //deleting a value, POP: it removes the last value of the list
+        listOfFriends.pop()
+        console.log(listOfFriends)
+
+        
+    </script>
+</body>
+</html>

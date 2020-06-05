@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>built in string functions</title>
+</head>
+<body>
+    <script>
+        var firstStr = "this is a string for javascript string functions, javascript";
+        // length of the string.
+        console.log(firstStr.length);
+        // find the index of the string in another string.
+        console.log(firstStr.indexOf("javascript"));
+        console.log(firstStr.indexOf("this"));
+        // find the last index of the string inside another string.
+        console.log(firstStr.lastIndexOf("javascript"));
+
+        // to get the part of the string slice(start, end)
+        console.log(firstStr.slice(0,5));
+        console.log(firstStr.slice(-10));
+        console.log(firstStr.slice(6));
+
+        // to get the substring . subStr(start, length)
+        console.log(firstStr.substr(0,4));
+        console.log(firstStr.substr(21, 10));
+        console.log(firstStr.substr(21));
+
+    </script>
+</body>
+</html>

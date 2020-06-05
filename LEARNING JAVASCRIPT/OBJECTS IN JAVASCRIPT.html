@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <script>
+        // var myCars ={
+        //     'buggattiveryon' : '350 kmph',
+        //     "lamboghrini" : ' 320 kmph',
+        // }
+        // console.log(myCars);
+        // console.log(typeof(myCars));
+
+            var buggattiveryon ={
+                name:'Buggattiveryoon',
+                manufacture:{
+                    manufacture_name:'  Bugatti ',
+                    location:' Molsheim, France,'
+                },
+                designer:'Jozef Kaban',
+                class: 'sports car',
+                engine:'8.0 L (488 cu in) quad-turbocharged W16',
+                color:{
+                    color1:'black',
+                    color2:'white',
+                    color3:'red',
+                    color:'blue'
+                },
+                topspeed:'408.47 kmph',
+                braking: function(){
+                    setTimeout(function(){
+                        console.log("car stopped !!!")
+                    }, 5000)
+                }
+
+            }
+            // console.log(buggattiveryon.name);
+            // console.log(buggattiveryon.topspeed);
+            // console.log(buggattiveryon.manufacture);
+            // console.log(buggattiveryon.engine);
+            // console.log(buggattiveryon.braking);
+            // console.log(buggattiveryon.braking());
+
+
+            var personalDetails={
+                name:'Prabesh Gautam',
+                age:'24 years',
+                education:{
+                    school:'Green Valley Academy',
+                    high_school:'Nasa International college',
+                    bachelor:'Asian College of Higher Studies'
+                },
+                address:{
+                    permanent_address:'Ilam, Nepal',
+                    mailing_address:' Kathmandu, Nepal'
+                },
+                profession:'Web Developer',
+                Interest:'Programming',
+                Skills:{
+                    Speaking_Languages:'English, Nepali, Hindi',
+                    Programming_Languages:'Javascript, HTML, CSS'
+                },
+                Speed:function(){
+                    setTimeout(function(){
+                        console.log(personalDetails.Speed)
+                    }, 1000)
+                }
+
+            }
+
+            console.log(personalDetails.name)
+            console.log(personalDetails.address)
+            console.log(personalDetails.age)
+            console.log(personalDetails.Speed())
+            console.log(personalDetails.Skills)
+
+    </script>
+</body>
+</html>

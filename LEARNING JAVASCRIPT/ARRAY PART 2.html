@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array part 2</title>
+</head>
+<body>
+    
+<script>
+        var myFriends=['ram','shyam','hari', 'laxman']
+        console.log(myFriends)
+
+        myFriends.splice(3, 0 , 'kumar', 'pratap')
+
+        // 1st item tells where to Start 
+        // 2nd item tells how many to delete 
+        // 3rd and 4th and so on  item tells what to add.
+         console.log(myFriends)
+
+         myFriends.splice(0,0, 'bhim')
+         console.log(myFriends)
+
+        //  deleting a item in specific location.
+        myFriends.splice(2,1);
+        console.log(myFriends)
+
+        // concat() concatination of the arrays: combining the two arrays
+         var myFriends2 = [ 'robin','kobin','maya']
+         var allFriends = myFriends.concat(myFriends2);
+         console.log(allFriends);
+
+        //  sorting ascending and descending order
+        // ascending order
+        allFriends.sort()
+        console.log(allFriends)
+        // descending order
+        allFriends.reverse()
+        console.log(allFriends)
+
+
+
+
+</script>
+</body>
+</html>

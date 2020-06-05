@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting in javascript</title>
+</head>
+<body>
+    
+    <script>
+        // hoisting is not a features. so always declare the variable and function before executing them.
+
+
+
+        // hoisting can be defined as the mechanism where the function and variable can be used before declaring the variable.
+        // variable hoisting
+        console.log(x);
+        x = 50;
+        console.log(x);
+        var x;
+
+
+
+        // function hoisting
+
+        // console.log(sum(10,3));
+        // console.log(sum(5,3));
+        
+        
+        // var sum =function(num1, num2){
+        //     return(num1+num2);
+
+        // } 
+        var total =10;
+        function sum(num1, num2){
+            console.log(total);
+            total = num1+num2;
+            var total;
+            return(total);
+
+            }
+
+        console.log(sum(25,3));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in JS</title>
+</head>
+<body>
+    <script>
+        // javascript provides two types of loops
+        // for loop and while loop 
+        // for loop is used if the number of iteration is known
+        // while loop is used if ht number of iteration is not known
+
+        // syntax while loop
+        // while(condition){
+        //     block of codes
+        // }
+        
+
+        // var val=0;
+        // while(val<=50){
+        //     console.log('this is ' + val);
+        //     val++;
+
+
+
+        // syntax
+        // for(statement1; statement2; statement3 ){
+        //     block of codes
+        // }
+            
+        var listing=[1,2,3,4,5,6,7,8,9,10];
+        var i ;
+
+        for(i =0; i<listing.length; i++){
+            console.log('In this position Value inside the list is '+ listing[i]);
+        }
+        console.log('////////////////////////////////////////////////////////////////////////////////////////////////////')
+        //break keyword in loop
+        for(i =0; i<listing.length; i++){
+            if(i>=3) break;
+            console.log('In this position Value inside the list is '+ listing[i]);
+        }
+        console.log('////////////////////////////////////////////////////////////////////////////////////////////////////')
+      
+        //continue keyword
+        for(i =0; i<listing.length; i++){
+            if(i % 2 === 0) continue;
+            console.log('In this position Value inside the list is '+ listing[i]);
+        }
+
+        
+
+
+
+        
+    </script>
+    <h1></h1>
+</body>
+</html>
